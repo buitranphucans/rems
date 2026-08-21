@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trạm Quan Trắc Môi Trường Thời Gian Thực REMS</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Trạm Quan Trắc Môi Trường Thời Gian Thực REMS</h1>
+    <select id="tramSelect">
+        <option value="Tram1">TQTMT-1 - Tháp Mười</option>
+        <option value="Tram2">TQTMT-2 - Cao Lãnh</option>
+        <option value="Tram3">TQTMT-3 - Tân Kiều</option>
+    </select>
+
+        <div id="map"></div>
+        
+        <div class="container">
+        <button id="dark-mode">Chế độ tối</button>
+        <div class="card">
+            <h2>Nhiệt độ (°C) </h2>
+            <p id="nhietDoC"></p>
+        </div>
+
+        <div class="card">
+            <h2>Nhiệt độ (°F) </h2>
+            <p id="nhietDoF"></p>
+        </div>
+
+        <div class="card">
+            <h2>Độ ẩm (%)</h2>
+            <p id="doAm"></p>
+        </div>
+
+        <div class="card">
+            <h2>Ánh sáng</h2>
+            <p id="anhSang"></p>
+        </div>
+
+        <div class="card">
+            <h2>Không khí</h2>
+            <p id="khongKhi"></p>
+        </div>
+
+        <div class="card">
+            <h2>Mưa</h2>
+            <p id="mua"></p>
+        </div>
+
+        <div class="card">
+            <h2>Chế độ</h2>
+            <p id="online"></p>
+        </div>
+
+    </div>
+    <hr class="hr">
+    <div class="score-box">
+        <h2>Điểm Môi Trường</h3>
+        <h1 id="score">0/100</h1>
+        <p id="status">Đang đánh giá...</p>
+        <h2>Đánh giá</h1>
+        <p id="status_2"></p>
+        <h2>Hiện tượng thời tiết</h2>
+        <p id="weather"></p>
+    </div>
+    <div class="solution">
+        <h2>Giải pháp đề xuất</h2>
+        <p id="solution"></p>
+    </div>
+    <hr class="hr">
+    <div class="chart-container">
+        <canvas id="nhietDoC_Chart"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="nhietDoF_Chart"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="doAm_Chart"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="anhSang_Chart"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="khongKhi_Chart"></canvas>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

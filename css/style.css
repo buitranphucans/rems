@@ -1,0 +1,144 @@
+body {
+    background: #ffffff;
+    color: #000000;
+    font-family: Arial;
+    text-align: center;
+}
+
+
+button {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    font-family: 'Arial';
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    font-size: 100%;
+    margin-top: 20px;
+    font-family: 'Arial';
+}
+
+h3 {
+    font-size: 99%;
+    margin-top: 20px;
+    font-family: 'Arial';
+}
+
+.solution {
+    margin-top: 30px;
+    font-family: 'Arial';
+    font-size: 25px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 15px;
+    width: 180px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card p {
+    font-size: 30px;
+}
+
+.hr {
+    border: none;
+    border-top: 3px solid black;
+    width: 70%;
+    margin: 20px auto;
+}
+
+.score-box {
+    font-family: 'Arial';
+    font-size: 30px;
+    margin-top: 50px auto;
+}
+
+#map {
+    height: 400px;
+    width: 90%;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+
+.chart-container {
+    width: 85%;
+    height: 85%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode {
+    background: #000000;
+    color: #ffffff;
+    font-family: Arial;
+    text-align: center;
+}
+
+body.dark-mode .card {
+    background: #333333;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .chart-container {
+    background-color: #333333;
+    color: #ffffff;
+}
+body.dark-mode .leaflet-container .leaflet-layer,
+body.dark-mode .leaflet-container .leaflet-popup,
+body.dark-mode .leaflet-container .leaflet-control-zoom-in,
+body.dark-mode .leaflet-container .leaflet-control-zoom-out,
+body.dark-mode .leaflet-container .leaflet-control-attribution {
+    filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
+
+#tramSelect {
+    position: top;
+    top: 20px;
+    left: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial';
+    background-color: #ffffff;
+    color: #000000;
+    margin-top: 20px auto;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+}
+
+body.dark-mode hr {
+    border-top: 3px solid white;
+}
+
+body.dark-mode #tramSelect  {
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
